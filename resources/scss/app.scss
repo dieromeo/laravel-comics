@@ -1,5 +1,11 @@
 @import "~bootstrap/scss/bootstrap";
 
+$main-bg: #1c1c1c;
+$footer-bg: #303030;
+$button-br : #0282f9;
+$titles : #fff;
+$footer-list : #959595;
+
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -28,4 +34,51 @@ body {
     img {
         width: 100%;
     }
+}
+
+.current {
+    color: $titles;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: $button-br;
+    padding: 10px 20px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: translateY(-50%);
+}
+
+.comic-image {
+    max-height: 190px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.comic-title h4 {
+    color: $titles;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+#cards {
+    background-color: $main-bg;
+}
+
+.more-button {
+    all: unset;
+    background-color: $button-br;
+    padding: 10px;
+    color: $titles;
+    padding: 10px 60px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14;
+    font-weight: bold;
+    margin-bottom: 20px;
+
 }
