@@ -1,5 +1,31 @@
 @import "~bootstrap/scss/bootstrap";
 
-h1 {
-    color: red;
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.dc-logo {
+    height: 80px;
+}
+
+.dc-menu li {
+    line-height: 7.5;
+
+    a {
+        font-size: 11px;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.jumbo {
+    height: 400px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
 }
