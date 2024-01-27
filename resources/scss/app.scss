@@ -110,3 +110,82 @@ body {
         margin-right: 15px;
     }
 }
+
+.top-bar {
+    background-image: url('../img/footer-bg.jpg');
+    background-size: cover;
+
+    h2 {
+        color: $titles;
+        font-size: 18px;
+    }
+
+    ul {
+        margin: 20px 0;
+    }
+
+    li {
+        list-style: none;
+        margin-bottom: 5px;
+    }
+
+    a {
+        text-decoration: none;
+        color: $footer-list;
+        font-size: 12px;
+    }
+
+    .container {
+        overflow: hidden;
+        padding: 45px 0 40px 0;
+
+        .left {
+            display: flex;
+
+            div {
+                margin-right: 30px;
+            }
+        }
+
+        .right img {
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.footer-info {
+    color: $footer-list;
+    font-size: 12px;
+    max-width: 600px;
+
+    a {
+        color: $button-br;
+    }
+}
+
+.bottom-bar {
+    background-color: $footer-bg;
+
+    #signup {
+        all: unset;
+        color: white;
+        padding: 15px;
+        border: 2px solid $button-br;
+        margin: 20px 0;
+        font-size: 14px;
+        cursor: pointer;
+    }
+}
+
+#social-title {
+    color: $button-br;
+    font-size: 18px;
+    margin-right: 30px;
+}
+
+.menu {
+    gap: 20px;
+}
