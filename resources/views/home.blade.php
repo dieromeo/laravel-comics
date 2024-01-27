@@ -35,4 +35,5 @@ Homepage
         </div>
     </div>
 </section>
+@include('_partials.main_menu')
 @endsection
