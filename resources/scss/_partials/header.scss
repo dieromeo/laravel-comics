@@ -1,0 +1,19 @@
+/***********
+HEDAER 
+***********/
+
+.dc-logo {
+    height: 80px;
+}
+
+.dc-menu li {
+    line-height: 7.5;
+
+    a {
+        font-size: 11px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -12,10 +12,10 @@ $contents= [
 ?>
 
 <h2>{{ strtoupper($title) }}</h2>
-<ul class="ps-0">
+<ul class="ps-0 list-unstyled">
     @foreach ($contents as $content)
     <li class="m-0">
-        <a href="{{$content['link']}}">{{ $content['name'] }}</a>
+        <a href="{{$content['link']}}" class="text-decoration-none">{{ $content['name'] }}</a>
     </li>
     @endforeach
 </ul>

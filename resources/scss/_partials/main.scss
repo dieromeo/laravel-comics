@@ -1,0 +1,77 @@
+/************
+MAIN 
+************/
+@use './variables.scss' as *;
+
+/************
+JUMBO 
+************/
+
+.jumbo {
+    height: 400px;
+}
+
+.current {
+    color: $titles;
+    font-size: 18px;
+    background-color: $button-br;
+    padding: 10px 20px;
+    transform: translateY(-50%);
+}
+
+/************
+COMICS 
+************/
+
+.comic-image {
+    max-height: 190px;
+}
+
+#cards {
+    background-color: $main-bg;
+}
+
+.comic-title h4 {
+    color: $titles;
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.more-button {
+    background-color: $button-br;
+    color: $titles;
+    padding: 10px 60px;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/************
+LOGOS MENU 
+************/
+
+#main-menu {
+    background-color: $button-br;
+    padding: 50px;
+
+    ul {
+        gap: 75px;
+
+        a {
+            color: $titles;
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            #menu-title {
+                font-size: 14px;
+            }
+        }
+    }
+
+    .prodotto img {
+        height: 55px;
+        max-width: 55px;
+        margin-right: 15px;
+    }
+}

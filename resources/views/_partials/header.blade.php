@@ -5,9 +5,9 @@
 <header>
     <div class="container d-flex justify-content-between align-items-center">
         <img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo dc" class="dc-logo">
-        <ul class="d-flex align-items-center gap-4 list-unstyled dc-menu">
+        <ul class="d-flex align-items-center gap-4 list-unstyled dc-menu mb-0">
             @foreach ($menu as $voce_menu)
-            <li><a class="text-black" href={{ $voce_menu['link'] }}>{{strtoupper( $voce_menu['name']) }}</a></li>
+            <li><a class="text-black text-decoration-none" href={{ $voce_menu['link'] }}>{{strtoupper( $voce_menu['name']) }}</a></li>
             @endforeach
         </ul>
     </div>

@@ -17,8 +17,17 @@ Route::get('/', function () {
 
     $data = [
         'comics' => config('comicsdb'),
-        'menu' => config('menudb')
+        'menu' => config('menudb'),
     ];
 
     return view('home', $data);
+});
+
+Route::get('/characters', function () {
+
+    $data = [
+        'comics' => config('comicsdb'),
+        'menu' => config('menudb'),
+    ];
+    return view('characters', $data);
 });

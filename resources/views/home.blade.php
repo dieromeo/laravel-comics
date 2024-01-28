@@ -5,14 +5,7 @@ Homepage
 @endsection
 
 @section('main')
-<section id="jumbotron">
-<div class="jumbo">
-    <img src="{{ Vite::asset('resources/img/jumbotron.jpg') }}" alt="jumbotron">
-</div>
-<div class="container position-relative">
-    <div class="current">current series</div>
-</div>
-</section>
+@include('_partials.jumbotron')
 
 <section id="cards">
     <div class="container">
@@ -20,18 +13,18 @@ Homepage
             @foreach ($comics as $comic)
             <div class="col-2 gy-4">
                 <div class="comic">
-                    <div class="comic-image">
-                        <a href="#"><img src={{$comic['thumb']}} alt=""></a>
+                    <div class="comic-image overflow-hidden">
+                        <a href="#"><img class="d-block w-100" src={{$comic['thumb']}} alt=""></a>
                     </div>
                     <div class="comic-title">
-                        <h4>{{$comic['title']}}</h4>
+                        <h4>{{strtoupper($comic['title'])}}</h4>
                     </div>
                 </div>
             </div>
             @endforeach
         </div>
         <div class="more text-center">
-            <button class="more-button"> Load more </button>
+            <button class="more-button btn rounded-0 btn-primary text-uppercase fw-bold"> Load more </button>
         </div>
     </div>
 </section>
