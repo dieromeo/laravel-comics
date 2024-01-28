@@ -2,6 +2,8 @@
 HEDAER 
 ***********/
 
+@use './variables.scss' as *;
+
 .dc-logo {
     height: 80px;
 }
@@ -14,6 +16,20 @@ HEDAER
 
         &:hover {
             text-decoration: underline;
+        }
+    }
+}
+
+.header-top-bar {
+    height: 25px;
+    background-color: $button-br;
+    font-size: 12px;
+
+    .additional-sites {
+        margin-left: 65px;
+
+        i {
+            margin-left: 5px;
         }
     }
 }
